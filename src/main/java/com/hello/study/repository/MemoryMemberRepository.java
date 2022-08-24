@@ -1,9 +1,10 @@
 package com.hello.study.repository;
 
 import com.hello.study.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
-
+@Repository
 public class MemoryMemberRepository implements MemberRepository{
   
   //공통으로 사용되는것  > 예제니까 단순하게 map 으로 (실무에서 동시성 문제 생각해야함)
