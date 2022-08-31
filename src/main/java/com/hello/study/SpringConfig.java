@@ -1,5 +1,6 @@
 package com.hello.study;
 
+import com.hello.study.aop.TimeTraceAop;
 import com.hello.study.repository.*;
 import com.hello.study.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,11 @@ public class SpringConfig {
    // return new MemberService(memberRepository());
     return new MemberService(memberRepository);
   }
+  
+//  @Bean
+//  public TimeTraceAop timeTraceAop(){
+//    return new TimeTraceAop();
+//  }
   
 //  @Bean
 //  public MemberRepository memberRepository(){
